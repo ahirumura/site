@@ -111,10 +111,11 @@
     transition:transform .9s cubic-bezier(.34,1.56,.64,1);
   }
   .hero-mascot.is-visible{
-    transform:translateX(24%);
+    transform:translateX(0);
   }
   .hero-mascot img{
     width:100%;
+    transform:translateX(24%);
     filter:drop-shadow(0 10px 16px rgba(0,0,0,.3));
   }
   .mascot-bubble{
@@ -135,7 +136,7 @@
   }
   @media (max-width:720px){
     .hero-mascot{width:clamp(96px,30vw,150px);bottom:12px;}
-    .hero-mascot.is-visible{transform:translateX(20%);}
+    .hero-mascot img{transform:translateX(20%);}
     .mascot-bubble{font-size:12px;padding:8px 14px;white-space:normal;text-align:center;}
   }
 
