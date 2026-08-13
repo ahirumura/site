@@ -88,6 +88,10 @@
     font-weight:900;margin:0 0 16px;line-height:1.5;
     text-shadow:0 2px 12px rgba(0,0,0,.25);
   }
+  .hero-content h1 br.soft{display:none;}
+  @media (max-width:560px){
+    .hero-content h1 br.soft{display:inline;}
+  }
   .hero-content p{font-size:clamp(14px,2vw,17px);max-width:560px;opacity:.95;margin:0 0 28px;}
   .btn{
     display:inline-flex;align-items:center;gap:8px;
@@ -223,6 +227,8 @@
     color:var(--ink);
     padding:0 2px;
     font-weight:700;
+    -webkit-box-decoration-break:clone;
+    box-decoration-break:clone;
   }
 
   /* style */
@@ -310,7 +316,7 @@
 <div id="top" class="hero">
   <div class="wrap hero-content">
     <span class="kicker">🦆 ようこそ、あひる村へ</span>
-    <h1>意味や価値から離れて、<br>無邪気に全力で遊ぶ大人のコミュニティ。</h1>
+    <h1>意味や価値から離れて、<br>無邪気に全力で遊ぶ<br class="soft">大人のコミュニティ。</h1>
     <p>ワクワクしないことはやらない。日常を忙しく過ごす大人たちが、"あの頃"のようにクワックワッと無邪気に、世間の常識や当たり前から離れて全力で楽しむ場所です。</p>
     <div class="hero-actions">
       <a class="btn btn-primary" href="#events">直近のイベントを見る</a>
